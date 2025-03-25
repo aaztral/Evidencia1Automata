@@ -1,6 +1,7 @@
 # Evidencia 1: Implementación de Análisis Léxico (Automata y Expresión Regular)
 Entrega de la Evidencia 1 de Implementación de Métodos Computacionales.
-Armando Fuentes Silva - A01712074
+
+Armando Fuentes Silva - A01712074.
 
 ## Descripción 
 El lenguaje seleccionado para este proyecto fue el Elven, este es un lenguaje creado por el escritor J. R. R. Tolkien para los Elfos en su obra de ficción "El Señor de los Anillos". 
