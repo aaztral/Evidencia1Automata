@@ -32,9 +32,11 @@ Cualquier caracter no establecido en el alfabeto no es aceptado.
 El automata diseñado es el siguiente: 
 ![automata drawio](https://github.com/user-attachments/assets/8ba4b078-d321-4068-8df2-c366b915f4c9)
 
+## Regex
+
 Otra forma de representar al automata es a través de una expresión regular, la cual también fue realizada: 
 
-(^E)(CH(OR | UIR) | D(AIN | HEL)) | ËAR
+### (^E)(CH(OR | UIR) | D(AIN | HEL)) | ËAR
 
 ## Implementación
 Primero se crean los estados y los movimientos del automata, este necesita de un estado inicial, el estado siguiente, y el symbolo necesario para transicionar de un estado a otro.
