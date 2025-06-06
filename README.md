@@ -36,7 +36,7 @@ El automata diseñado es el siguiente:
 
 Otra forma de representar al automata es a través de una expresión regular, la cual también fue realizada: 
 
-### (^E)(CH(OR | UIR) | D(AIN | HEL)) | ËAR
+### (^E)(CH(OR | UIR) | D(AIN | HEL)) | ËAR 
 
 ## Implementación
 Primero se crean los estados y los movimientos del automata, este necesita de un estado inicial, el estado siguiente, y el symbolo necesario para transicionar de un estado a otro.
@@ -60,7 +60,7 @@ Esta es la llamada recursiva del automata, la cual checa el symbolo de la lista 
 automatonCheck([Symbol | RestofList], InitialState)
 ```
 ## Pruebas
-El automata fue implementado en Prolog y se usan 10 pruebas, 5 pruebas con un resultado esperado 'True' (las 5 palabras del lenguaje) y 5 con un resultado esperado 'False'
+El automata fue implementado en Prolog (https://swish.swi-prolog.org/) y tiene configuradas 10 pruebas, 5 pruebas con un resultado esperado 'True' (las 5 palabras del lenguaje) y 5 con un resultado esperado 'False'
 
 ### Pruebas aceptadas:
 1. ëar.
@@ -94,15 +94,24 @@ Expected value: true
  true
 ```
 
-Estas pruebas funcionan con la siguiente función: 
+Estas pruebas también pueden realizarse con la siguiente función:
+### Input
 ```
 go_over_automaton([ë, a, r]).
 ```
+### Output
+```
+true
+```
 Es posible hacer pruebas llamando a esta función y creando tu listado de simbolos. 
+### Input
 ```
 go_over_automaton([b, e, a, r]).
 ```
-
+### Output
+```
+false
+```
 ## Análisis
 ### Complejidad temporal
 La complejidad temporal es el recorrido recursivo de una lista, esta checa la función move para el estado del automata, una vez que la lista se acaba el programa checa si el estado final es un estado que es aceptado o rechazado, por lo que la complejidad debería ser una de O(N) ya que se ejecutan las funciones cuantos symbolos haya en el programa sin uso de un nested loop.
