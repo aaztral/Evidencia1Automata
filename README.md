@@ -76,11 +76,32 @@ El automata fue implementado en Prolog y se usan 10 pruebas, 5 pruebas con un re
 4. random.
 5. ear.
 
-Estas pruebas funcionan con una función similar a la siguiente: 
+### Ejemplo de uso.
+
+#### Input
+```
+ëar.
+```
+or
+```
+ëar
+```
+
+#### Output
+```
+ëar
+Expected value: true
+ true
+```
+
+Estas pruebas funcionan con la siguiente función: 
 ```
 go_over_automaton([ë, a, r]).
 ```
-También es posible hacer pruebas llamando a esta función y creando tu listado de simbolos. 
+Es posible hacer pruebas llamando a esta función y creando tu listado de simbolos. 
+```
+go_over_automaton([b, e, a, r]).
+```
 
 ## Análisis
 ### Complejidad temporal
